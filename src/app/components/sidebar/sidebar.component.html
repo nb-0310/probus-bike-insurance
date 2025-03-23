@@ -1,0 +1,178 @@
+<div class="wrapper">
+  <div class="title">Customize Policy Details</div>
+
+  <div class="options">
+    <div class="policy_type">
+      <h1>Policy Type</h1>
+      <div class="inputs">
+        <label>
+          <input type="radio" name="option" value="comprehensive" />
+          Comprehensive
+        </label>
+        <label>
+          <input type="radio" name="option" value="thirdPartyOnly" /> Third
+          Party only
+        </label>
+      </div>
+    </div>
+
+    <div class="idv features_block">
+      <div class="header" (click)="isOpen = !isOpen">
+        <h1>Set Your IDV</h1>
+    
+        <svg *ngIf="!isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="M36 18L24 30L12 18"
+          />
+        </svg>
+    
+        <svg *ngIf="isOpen"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="m13 30l12-12l12 12"
+          />
+        </svg>
+      </div>
+    
+      <div *ngIf="isOpen">
+        <div class="radioInputs">
+          <label>
+            <input type="radio" name="option" value="automatic" /> Automatic (For
+            best Quotes)
+          </label>
+          <label>
+            <input type="radio" name="option" value="setYourOwnIDV" /> Set your own
+            IDV
+          </label>
+        </div>
+    
+        <div class="range">
+          <label for="rangeInput">Cover Amount (IDV)</label>
+          <input
+            type="range"
+            id="rangeInput"
+            name="range"
+            min="0"
+            max="100"
+            value="50"
+          />
+        </div>
+    
+        <div class="vals">
+          <div class="value">₹52,000</div>
+          <div class="min_max">(Min - 38000, Max - 85500)</div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="ins_company features_block">
+      <div class="header">
+        <h1>Filter Insurance Company</h1>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="M36 18L24 30L12 18"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="detariff_discount features_block">
+      <div class="header">
+        <h1>Detraiff Discount</h1>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="M36 18L24 30L12 18"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="additional_cover features_block">
+      <div class="header">
+        <h1>Additional Cover</h1>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="M36 18L24 30L12 18"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="addons_cover features_block">
+      <div class="header">
+        <h1>AddOns Cover</h1>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 48 48"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+            d="M36 18L24 30L12 18"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <button>Re-Calculate</button>
+  </div>
+</div>
